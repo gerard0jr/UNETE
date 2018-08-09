@@ -1,3 +1,40 @@
-<p>
-  home works!
-</p>
+<mat-sidenav-container>
+    <mat-sidenav #sideNav class="sidenav-width" role="navigation">
+       <app-sidenav (click)="sideNav.close()"></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content role="main" class="sidenav100">
+      <mat-toolbar color="primary" style="background: rgb(246, 129, 20);" class="mat-toolbar">
+        <button style="background-color: transparent; color: #ffffff;" mat-icon-button (click)="sideNav.open()">
+            <mat-icon>menu</mat-icon>
+        </button> 
+        <span class="titulo">{{title}}</span>
+        <!-- This fills the remaining space of the current row -->
+        <span class="example-fill-remaining-space"></span>
+        <button  (click)="copiarTexto()" class="boton-cct" mat-button>CCT: {{cct}}</button>
+        <textarea id="copiar" class="js-copytextarea" style="width:0px; height: 0px; z-index: -100000;" rows="5">CCT: {{cct}}</textarea>
+        <div class="foto-user">
+          <img src="{{foto}}" class="rounded-circle">
+        </div>
+        <mat-menu #appMenu="matMenu">
+          <button routerLink="perfil" mat-menu-item>
+            <mat-icon>account_circle</mat-icon>
+            <span class="menu-settings">Mi Perfil</span>
+          </button>
+          <button routerLink="about" mat-menu-item>
+            <mat-icon>help</mat-icon>
+            <span class="menu-settings">Acerca de</span>
+          </button>
+          <mat-divider></mat-divider>
+          <button (click)="onClickLogout()" mat-menu-item>
+            <mat-icon>highlight_off</mat-icon>
+            <span class="menu-settings">Salir</span>
+          </button>
+        </mat-menu>
+        <button style="background-color: transparent; color: #ffffff;" mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-toolbar>
+      <flash-messages></flash-messages>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content> 
+  </mat-sidenav-container>

@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <div class="centrado">
+    <mat-card-header>
+      <div class="foto-user">
+        <img src="{{foto}}" class="rounded-circle">
+        <mat-card-subtitle>Perfil de: {{nombre}}</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <form (submit)="onSubmitCCT()" name="fregistro">
+        <div class="form-group text-center">
+          <input class="form-control campo-mail" placeholder="{{cct}}" name="cct" id="cct" [(ngModel)]="cct" type="text" required>
+          <div class="invalid-feedback" id="icct">CCT incorrecta</div>
+          <button id="deshabilitar" type="submit" class="boton-enviar btn btn-primary btn-100 btnI">ACTUALIZAR DATOS</button><br>
+          <flash-messages></flash-messages>
+        </div>
+      </form>
+    <flash-messages></flash-messages>
+  </div>
+</mat-card>

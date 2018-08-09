@@ -1,0 +1,79 @@
+.sidenav-width{
+    width: 70%;
+    max-height: 100%;
+}
+
+@media(min-width:600px){
+    .sidenav-width{
+        width: 50%;
+    }
+}
+
+@media(min-width:1024px){
+    .sidenav-width{
+        width: 40%;
+    }
+}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  button:focus{
+      outline: 0;
+  }
+
+  a{
+      text-decoration: none;
+  } 
+
+.menu-settings{
+    color:#6f6b6b;
+}
+
+.mat-drawer-container{
+    height: 100vh;
+}
+
+.foto-user img{
+    width: 50px;
+}
+
+.mat-drawer{
+    position: fixed;
+}
+
+.boton-cct{
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 0.8em;
+}
+
+.mat-button{
+    padding: 0;
+}
+@media(max-width: 400px){
+    .titulo{
+        font-size: 0.8em;
+        margin-left: -5px;
+    }
+
+    .boton-cct{
+        font-size: 0.6em;
+        margin-right: -4px;
+    }
+}
+
+@media(max-width: 330px){
+    .titulo{
+        font-size: 0.8em;
+        margin-left: -5px;
+    }
+
+    .boton-cct{
+        font-size: 0.5em;
+        margin-right: -4px;
+    }
+}

@@ -1,0 +1,22 @@
+<mat-card class="example-card">
+  <div class="centrado">
+    <mat-card-header>
+      <div class="foto-user">
+        <img src="{{foto}}" class="rounded-circle">
+        <mat-card-subtitle>{{nombre}}</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <form (submit)="onSubmitCCT()" name="fregistro">
+        <div class="form-group text-center">
+          <input class="form-control campo-mail" placeholder="CCT" name="cct" id="cct" [(ngModel)]="cct" type="text" required>
+          <div class="invalid-feedback" id="icct">CCT incorrecta</div>
+          <p>
+              Para brindarte un mejor servicio, necesitamos que nos proporciones tu Clave de Centro de Trabajo (CCT).
+            </p>
+          <button id="deshabilitar" type="submit" class="boton-enviar btn btn-primary btn-100 btnI">ENVIAR</button><br>
+          <flash-messages></flash-messages>
+        </div>
+      </form>
+    <flash-messages></flash-messages>
+  </div>
+</mat-card>

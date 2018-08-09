@@ -1,0 +1,25 @@
+[debug] [2018-08-08T21:58:57.239Z] ----------------------------------------------------------------------
+[debug] [2018-08-08T21:58:57.254Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ssweb1\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-08T21:58:57.254Z] CLI Version:   3.19.3
+[debug] [2018-08-08T21:58:57.254Z] Platform:      win32
+[debug] [2018-08-08T21:58:57.254Z] Node Version:  v8.11.3
+[debug] [2018-08-08T21:58:57.254Z] Time:          Wed Aug 08 2018 16:58:57 GMT-0500 (Hora de verano central (México))
+[debug] [2018-08-08T21:58:57.254Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-08T21:58:57.286Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-08T21:58:57.286Z] > authorizing via signed-in user
+[debug] [2018-08-08T21:58:57.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/webapp-maestros  
+  
+ Wed Aug 08 2018 16:58:57 GMT-0500 (Hora de verano central (México))
+[debug] [2018-08-08T21:58:58.165Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T21:58:58.169Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/webapp-maestros/tokens  
+  
+ Wed Aug 08 2018 16:58:58 GMT-0500 (Hora de verano central (México))
+[debug] [2018-08-08T21:58:58.791Z] <<< HTTP RESPONSE 200
+[warn] !  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'webapp-maestros'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "%RESOURCE_DIR%" run build

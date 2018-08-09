@@ -1,0 +1,27 @@
+<div class="text-center m-4">
+  <img src="assets/img/u-unete.png" alt="login">
+  <!--FORM-->
+  <form (submit)="onSubmitAddUser()" name="fregistro">
+    <div class="form-group text-center">
+        <input class="form-control campo-mail" placeholder="Ingresa tu nombre" name="nombre" id="nombre" [(ngModel)]="nombre" type="text" required>
+        <div class="invalid-feedback" id="iname">Nombre requerido</div>
+        <input class="form-control campo-mail" placeholder="Correo Electrónico" name="email" id="email" [(ngModel)]="email" type="email" required>
+        <div class="invalid-feedback" id="imail">Correo no válido</div>
+        <input class="form-control campo-mail" placeholder="Contraseña (mínimo 6 caracteres)" name="password" id="password" [(ngModel)]="password" type="password" minlength="6" required>
+        <div class="invalid-feedback" id="ipass">Contraseña no válida, mínimo 6 caracteres</div>
+        <input class="form-control campo-mail" placeholder="Repite contraseña" name="rpassword" id="rpassword" data-match="#password" type="password" required>
+        <div class="invalid-feedback" id="irpass">La contraseña no coincide</div>
+        <input class="form-control campo-mail" placeholder="Celular" name="cel" id="cel" [(ngModel)]="cel" type="text" required>
+        <div class="invalid-feedback" id="icel">Favor de proporcionar un número celular</div>
+        <input class="form-control campo-mail" placeholder="Teléfono" name="tel" id="tel" [(ngModel)]="tel" type="text">
+        <div class="invalid-feedback" id="itel">Teléfono incorrecto</div>
+        <input class="form-control campo-mail" placeholder="Clave de Centro de Trabajo (CCT)" name="cct" id="cct" [(ngModel)]="cct" type="text" required>
+        <div class="invalid-feedback" id="icct">CCT incorrecta</div>
+        <button id="deshabilitar" type="submit" class="btn btn-primary btn-100 btnI">Registrarme</button><br>
+        <flash-messages></flash-messages>
+        <a href=""><button type="button" class="btn btn-link">Acerca de UNETE</button></a>
+        <a routerLink="/login"><button type="button" class="btn btn-link">regresar</button></a>
+    </div>
+  </form>
+</div>
+

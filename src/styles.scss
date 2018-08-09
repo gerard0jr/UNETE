@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+  html,body {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after { box-sizing: inherit; }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-drawer-container{
+    height: 100%;
+  }

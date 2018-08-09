@@ -1,0 +1,13 @@
+.cargando{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    text-align: center;
+    z-index: -1;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+}

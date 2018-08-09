@@ -1,0 +1,9 @@
+.app-loading {
+    .logo {
+      width: 100px;
+      height: 100px;
+      
+      // se procesa con webpack
+      background: url("./assets/img/loading.png") center center no-repeat;  
+    }
+  }

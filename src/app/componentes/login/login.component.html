@@ -1,3 +1,23 @@
-<p>
-  login works!
-</p>
+<div class="text-center m-4">
+  <img src="assets/img/u-unete.png" alt="login">
+  <!--FORM-->
+  <div class="form-group text-center">
+    <form (submit)="onSubmitLogin()" name="fregistro">
+      <input class="form-control campo-mail" placeholder="Correo Electrónico" [(ngModel)]="email" name="email" id="email" type="mail">
+      <div class="invalid-feedback" id="imail">Correo no válido</div>
+      <input class="form-control campo-mail" placeholder="Contraseña" [(ngModel)]="password" name="password" id="password" type="password">
+      <div class="invalid-feedback" id="ipass">Debes proporcionar una contraseña</div>
+      <button id="deshabilitar" type="submit" class="btn btn-primary btn-100 btnI">Iniciar Sesión</button>
+    </form>
+      <br>
+      <a href="/registro"><button type="button" class="btn btn-secondary btn-100 btnR">Registrarse</button></a>
+      <flash-messages></flash-messages>
+      <hr>
+      <button type="button" class="btn btn-fb" (click)="onClickFacebook()">Facebook</button>
+      <button type="button" class="btn btn-go" (click)="onClickGoogle()">Google</button>
+      
+      <hr>
+      <button type="button" class="btn btn-link" (click)="onClickForgot()">¿Olvidaste tu contraseña?</button>
+      <a href=""><button type="button" class="btn btn-link">Acerca de UNETE</button></a>
+  </div>
+</div>
